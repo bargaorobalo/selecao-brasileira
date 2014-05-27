@@ -1,17 +1,11 @@
 <polymer-element name="selecao-brasileira" attributes="name">
+    <!-- importing URL image -->
     <template>
         <img alt="{{name}}" src="https://raw.githubusercontent.com/pedropolisenso/selecao-brasileira/master/atletas/{{name}}.jpg">
     </template>
+
+    <!-- Validating attr to my tag -->
     <script>
-        Polymer('selecao-brasileira', {
-            /**
-             * Name of the ragnarok monster to display.
-             *
-             * @attribute name
-             * @type string
-             * @default ''
-             */
-            name: ''
-        });
+        Polymer('selecao-brasileira', {name: ''});
     </script>
 </polymer-element>
