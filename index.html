@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>:: Component &lt;selecao-brasileira&gt; ::</title>
+
+	<!-- Importing Web Component's Polyfill -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/platform.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/polymer.js"></script>
+
+	<!-- Importing Custom Elements -->
+	<link rel="import" href="src/selecao-brasileira.html">
+</head>
+<body>
+    <div id="NameAthlete">
+        <input 
+            value="felipao" 
+            oninput="document.querySelector('selecao-brasileira').name = this.value.toUpperCase().replace(' ','_');" />
+    </div><!-- NameAthlete END -->
+    
+    <!-- Using Custom Elements -->
+    <selecao-brasileira name="FELIPAO"></selecao-brasileira>
+</body>
