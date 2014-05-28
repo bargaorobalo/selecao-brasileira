@@ -15,11 +15,6 @@ body {
   background-size: cover;
   overflow-x: hidden; 
 }
-span {
-  font-family: Arial;
-  font-size: 25px;
-  color: #fc0;
-}
 #foto {
   float: left;
   margin-right: 10px;
