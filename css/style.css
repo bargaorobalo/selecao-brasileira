@@ -18,6 +18,9 @@ body {
 #foto {
   float: left;
   margin-right: 10px;
+  width: 350px;
+  height: 560px;
+  background-color: #fff;
 }
 #HoldName {
   width: 300px;
