@@ -9,7 +9,7 @@ Repository developed to create new element for display of athletes the selection
 
 - [Click-me to view](http://pedropolisenso.github.io/selecao-brasileira/)
 
-## As Areate
+## Usage
 
 1 - Import Web Components polyfill:
 
@@ -45,7 +45,7 @@ Repository developed to create new element for display of athletes the selection
 10. felipao
 
 
-## As contributing
+## Contributing
 
 1. Fork-me!
 2. Create your feature branch: `git checkout -b my-new-feature`
