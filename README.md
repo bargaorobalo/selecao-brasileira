@@ -56,7 +56,3 @@ Repository developed to create new element for display of athletes the selection
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT)
-
-
-
-## Pedro Polisenso
