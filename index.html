@@ -17,7 +17,7 @@
 <body>
     <div id="HoldPrincipal"></div><!-- HoldPrincipal END -->
     <div id="NameAthlete">
-        <input id="HoldName" value="felipao" oninput="document.querySelector('selecao-brasileira').name = this.value();" />
+        <input id="HoldName" value="felipao" oninput="document.querySelector('selecao-brasileira').name = this.value.replace(' ','_');" />
     </div><!-- NameAthlete END -->
     
     <!-- Using Custom Elements -->
