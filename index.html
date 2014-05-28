@@ -15,11 +15,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div id="HoldPrincipal"></div><!-- HoldPrincipal END -->
-    <div id="NameAthlete">
-        <input id="HoldName" value="felipao" oninput="document.querySelector('selecao-brasileira').name = this.value.replace(' ','_');" />
-    </div><!-- NameAthlete END -->
-    
-    <!-- Using Custom Elements -->
-    <selecao-brasileira name="felipao"></selecao-brasileira>
+    <div id="HoldPrincipal">    
+        <div id="NameAthlete">
+            <input id="HoldName" value="felipao" oninput="document.querySelector('selecao-brasileira').name = this.value.replace(' ','_');" />
+        </div><!-- NameAthlete END -->
+        
+        <!-- Using Custom Elements -->
+        <selecao-brasileira name="felipao"></selecao-brasileira>
+    </div><!-- HoldPrincipal END -->
 </body>
