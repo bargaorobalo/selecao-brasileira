@@ -16,11 +16,11 @@
 </head>
 <body>
     <div id="HoldPrincipal">    
+        <!-- Using Custom Elements -->
+        <selecao-brasileira name="felipao" id="foto"></selecao-brasileira>
+
         <div id="NameAthlete">
             <input id="HoldName" value="felipao" oninput="document.querySelector('selecao-brasileira').name = this.value.replace(' ','_');" />
         </div><!-- NameAthlete END -->
-        
-        <!-- Using Custom Elements -->
-        <selecao-brasileira name="felipao"></selecao-brasileira>
     </div><!-- HoldPrincipal END -->
 </body>
