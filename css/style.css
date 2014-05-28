@@ -15,7 +15,7 @@ body {
   background-size: cover;
   overflow-x: hidden; 
 }
-input[type=text] {
+#HoldName {
   width: 400px;
   height: 50px;
   font-family: Arial;
