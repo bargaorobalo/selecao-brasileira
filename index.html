@@ -7,6 +7,17 @@
 	<!-- Importing Web Component's Polyfill -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/platform.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/polymer.js"></script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=389297141208274&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+        (document, 'script', 'facebook-jssdk'));
+    </script>
 
 	<!-- Importing Custom Elements -->
 	<link rel="import" href="src/selecao-brasileira.html">
@@ -22,5 +33,10 @@
         <div id="NameAthlete">
             <input id="HoldName" value="felipao" oninput="document.querySelector('selecao-brasileira').name = this.value.replace(' ','_');" />
         </div><!-- NameAthlete END -->
+
+        <!-- div to like -->
+        <div id="like">
+            <div class="fb-like" data-href="http://pedropolisenso.github.io/selecao-brasileira/" data-width="360px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div><!-- link END -->
     </div><!-- HoldPrincipal END -->
 </body>
