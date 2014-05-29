@@ -1,11 +1,53 @@
-<polymer-element name="selecao-brasileira" attributes="name" attributes="id">
-    <!-- importing URL image -->
+<polymer-element name="selecao-brasileira" attributes="name">
     <template>
-        <img alt="{{name}}" src="https://raw.githubusercontent.com/pedropolisenso/selecao-brasileira/master/atletas/{{name}}.jpg">
+        <style>
+            #defaultImage {
+                position: absolute;
+                z-index: 0;
+            }
+            #playerImage {
+                position: absolute;
+                z-index: 2;
+            }
+        </style>
+        <img id="defaultImage" alt="Não está convocado" src="https://raw.githubusercontent.com/pedropolisenso/selecao-brasileira/master/atletas/default.jpg">
+        <template bind="{{players as player}}">
+            <template repeat="{{p in player}}">
+                <template if="{{p.nickname == name}}">
+                    <img id="playerImage" alt="{{name}}" src="https://raw.githubusercontent.com/pedropolisenso/selecao-brasileira/master/atletas/{{name}}.jpg">
+                </template>
+            </template>
+        </template>
     </template>
-
-    <!-- Validating attr to my tag -->
-    <script>
-        Polymer('selecao-brasileira', {name: ''});
+  <script>
+    Polymer('selecao-brasileira', {
+        ready: function() {
+            this.players = [
+                {nickname: 'bernard'},
+                {nickname: 'daniel_alves'},
+                {nickname: 'dante'},
+                {nickname: 'david_luiz'},
+                {nickname: 'felipao'},
+                {nickname: 'fernandinho'},
+                {nickname: 'fred'},
+                {nickname: 'henrique'},
+                {nickname: 'hernandes'},
+                {nickname: 'hulk'},
+                {nickname: 'jefferson'},
+                {nickname: 'jo'},
+                {nickname: 'julio_cesar'},
+                {nickname: 'luiz_gustavo'},
+                {nickname: 'maicon'},
+                {nickname: 'marcelo'},
+                {nickname: 'maxwell'},
+                {nickname: 'neymar'},
+                {nickname: 'oscar'},
+                {nickname: 'paulinho'},
+                {nickname: 'thiago_silva'},
+                {nickname: 'victor'},
+                {nickname: 'willian'}
+            ]
+         }
+    });
     </script>
 </polymer-element>
